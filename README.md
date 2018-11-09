@@ -20,5 +20,5 @@ Creates a basic Jenkins implementation running on an Ubuntu ec2 server. Creates 
 
 ##### Assumptions:
 
- * None
+ * A VPC is already in place
 
