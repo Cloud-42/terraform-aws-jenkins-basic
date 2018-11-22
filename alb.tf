@@ -15,7 +15,6 @@ resource "aws_lb" "jenkins" {
 
   tags {
     "Environment"   = "${var.environment}"
-    "Contact"       = "${var.contact}"
     "Orchestration" = "${var.orchestration}"
   }
 }
