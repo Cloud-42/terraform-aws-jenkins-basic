@@ -80,15 +80,14 @@ variable "subnets" {
   description = "Subnets where the ALB will be placed"
 }
 
-
 variable "enable_deletion_protection" {
   description = "Enable / Disable deletion protection for the ALB."
-  default = "false"
+  default     = "false"
 }
 
 variable "enable_cross_zone_load_balancing" {
   description = "Enable / Disable cross zone load balancing"
-  default = "false"
+  default     = "false"
 }
 
 variable "internal" {
@@ -105,50 +104,50 @@ variable "access_from" {
 
 variable "alb_listener_port" {
   description = "ALB listener port"
-  default = "443"
+  default     = "443"
 }
 
 variable "alb_listener_protocol" {
   description = "ALB listener protocol"
-  default = "HTTPS"
+  default     = "HTTPS"
 }
 
 variable "healthy_threshold" {
   description = "ALB healthy count"
-  default = "4"
+  default     = "4"
 }
 
 variable "unhealthy_threshold" {
   description = "ALB unhealthy count"
-  default = "4"
+  default     = "4"
 }
 
 variable "timeout" {
   description = "ALB timeout value"
-  default = "5"
+  default     = "5"
 }
 
 variable "interval" {
   description = "ALB health check interval"
-  default = "10"
+  default     = "10"
 }
 
 variable "svc_port" {
   description = "Service port: The port on which targets receive traffic."
-  default = "8080"
+  default     = "8080"
 }
 
 variable "target_group_path" {
   description = "Health check request path"
-  default = "/"
+  default     = "/"
 }
 
 variable "target_group_protocol" {
   description = "The protocol to use to connect to the target"
-  default = "HTTP"
+  default     = "HTTP"
 }
 
 variable "target_group_port" {
   description = "The port to use to connect with the target"
-  default = "8080"
+  default     = "8080"
 }

@@ -9,4 +9,3 @@ output "ec2_ssh_sg" {
 output "ec2_sg" {
   value = "${aws_security_group.ec2_sg.id}"
 }
-
