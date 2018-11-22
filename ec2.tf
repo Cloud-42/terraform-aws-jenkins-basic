@@ -35,7 +35,6 @@ resource "aws_instance" "ec2" {
   tags {
     Name            = "${var.environment}_jenkins_ec2"
     "Environment"   = "${var.environment}"
-    "Contact"       = "${var.contact}"
     "Orchestration" = "${var.orchestration}"
   }
 }
