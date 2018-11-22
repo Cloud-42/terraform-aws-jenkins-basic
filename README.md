@@ -5,6 +5,7 @@ Creates a basic Jenkins implementation running on an Ubuntu ec2 server. Creates 
 ##### Standard items created:
 
  * ec2 server with Jenkins installed.
+ * 3x Security Groups "SG" - SSH ec2 SG, Access to ec2 SG, ALB SG.
  * ALB, available via HTTPS.
  * Standard tags added to resources: Name, environment, orchestration.
  * Custom KMS encryption key.
@@ -24,3 +25,4 @@ Creates a basic Jenkins implementation running on an Ubuntu ec2 server. Creates 
 
  * A VPC is already in place
  * Route 53 zone is already in place
+ * Terraform version >= 0.11.10
