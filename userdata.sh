@@ -11,8 +11,13 @@ echo $(hostname -I | cut -d\  -f1) $(hostname) | sudo tee -a /etc/hosts
 #
 # Install latest Java
 #
-apt-get update && apt-get upgrade -y
+apt-get update -y
 apt-get install default-jdk -y
+#
+# Install unattended-upgrade and upgrade any security patches
+#
+apt-get install unattended-upgrades -y
+unattended-upgrade -d -v
 #
 # Install Jenkins
 #
