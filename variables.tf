@@ -1,10 +1,14 @@
+variable "route53_endpoint_record" {
+  description = "Route 53 endpoint name. Creates route53_endpoint_record.domain."
+  default = "jenkins"
+}
 variable "count" {
   description = "Number of hosts to create"
   default     = "1"
 }
 
 variable "success_codes" {
-  description = "Success Codes for the Target Group Health Checks. Default is 220 ( OK )"
+  description = "Success Codes for the Target Group Health Checks. Default is 200 ( OK )"
   default     = "200"
 }
 
