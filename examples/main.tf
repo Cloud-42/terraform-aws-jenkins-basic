@@ -3,7 +3,6 @@
 # top level repository.
 #
 module "jenkins" {
-
   source = "git::https://github.com/Cloud-42/terraform-aws-jenkins-basic.git"
 
   trusted_security_groups = "sg-xyz1234"
@@ -20,6 +19,7 @@ module "jenkins" {
   # ALB Vars
   #
   certificate_arn = "arn:aws:acm:us-east-1:1234567891:certificate/161897e5-15aw-43sw-1523-51b0f92d2b3a"
+
   subnets           = "${module.vpc.subnets_public}"
   target_group_path = "/login"
 }

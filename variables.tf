@@ -1,7 +1,8 @@
 variable "route53_endpoint_record" {
   description = "Route 53 endpoint name. Creates route53_endpoint_record.domain."
-  default = "jenkins"
+  default     = "jenkins"
 }
+
 variable "count" {
   description = "Number of hosts to create"
   default     = "1"
