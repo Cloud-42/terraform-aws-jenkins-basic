@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://www.cloud42.io/" target="_blank" rel="Homepage">
+  <img width="200" height="200" src="https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png">
+  </a>
+</p>
+
+---
+<p align="center">Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.</p>
+
+---
 # Basic Jenkins implementation on AWS.
 
 Creates a basic Jenkins implementation running on an Ubuntu ec2 server. Creates an ALB which sits in front of the Jenkins server to provide a secure endpoint. Standard implementation is to have the Jenkins host running in a private subnet, traffic is then routed to it via the ALB. The ALB can be public facing ( placed in a public subnet ) or privately available ( placed in a private subnet ). If the ALB is privately available, Direct Connect or a VPN connection to the private subnets is required to facilitate routing of any traffic. An encrypted s3 bucket is also created , to which the Jenkins ec2 host has access, which can be used to host files and resources that Jenkins will use.
