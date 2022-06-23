@@ -4,7 +4,6 @@ node {
     sh '''
       aws s3 ls
       terragrunt --version
-      docker version
     '''  
   }
 }
